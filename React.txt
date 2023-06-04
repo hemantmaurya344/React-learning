@@ -345,6 +345,12 @@
                 return num > 10;  // 1
               })
 
+-- Conditional rendering    
+    - It is a technique used to render different component depending on some condition
+
+
+
+
     - This is React@18 syntax to render 
     - in react@18 ReactDom.render() is not supported
     - and import ReactDom from react-dom is also not supported it needs `react-dom/client`
