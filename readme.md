@@ -81,7 +81,7 @@
 -- Template literals
     - injecting string to the js (string interpolation)
     - syntax 
-         render(<h1>Hello {`${var1} ${var2}`}</>)
+         render(<h1>Hello {`${var1} ${var2}`}</h1>)
     - whatever inside the backticks `` is converted into a one string
 -- better way to do that is using {var1 + " "+ var2} like in JAVA
 
