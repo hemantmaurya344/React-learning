@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+This is the old way to get react module
+        var react = require("react");
+        var ReactDom = require("react-dom");
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ import React from "react";
+import  ReactDom from "react-dom";
 
-## Available Scripts
+     import React from "react";
+     import  ReactDom from "react-dom";
+     ReactDom.render(<h1>Hello World!</h1>, document.getElementById("root"));
 
-In the project directory, you can run:
 
-### `npm start`
+     import React from "react";
+    import  ReactDom from "react-dom";
+     ReactDom.render(
+         <div>
+            <h1>Hello World!</h1>
+             <p>This is a paragraph</p>
+        </div>, 
+         document.getElementById("root")
+     );
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ReactDom.render(<h1>Hello name!</h1>, document.getElementById("root"));
+    
+       import React from "react";
+     import  ReactDom from "react-dom";
+     ReactDom.render(<h1>Hello {name}!</h1>, document.getElementById("root"));
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // const number = 19;
+    // ReactDom.render(
+    //     <div>
+    //         <h1>Hello {name}!</h1>
+    //         <p>My lucky number is {Math.random()}</p>
+    //     </div>, 
+    //     document.getElementById("root")
+    // );
 
-### `npm run build`
+//-- we can't write the statements inside those curly braces we can add only expressions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // ReactDom.render(<div>
+    //     <h1> {
+//             if (name == "Hemant") {
+//                 return 19;
+//             } else {
+//                 return 0;
+//             }
+//         }
+    //     </h1>
+    // </div>)
+ 
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // ReactDom.render(
+    //     <div>
+    //         <h1 className="heading">Hello World!</h1>
+    //         <p>My lucky number is {Math.floor(Math.random()*10)}</p>
+    //     </div>, 
+    //     document.getElementById("root"));
+    // ReactDom.render(
+    //     <div>
+    //         <h1 className="heading">Hello World!</h1>
+    //         <p>My lucky number is {Math.floor(Math.random()*10)}</p>
+    //     </div>, 
+    //     document.getElementById("live"));
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // ReactDom.render(<h1 style={{ color : "red",}}>Hello World!</h1>,
+    //     document.getElementById("root")
+    // );
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // function Heading(){
+    //     return <h1>Hello world!</h1>;
+    // }
+    // ReactDom.render(
+    //     <div>
+    //         {/* <h1>Hello world!</h1> */}
+    //         <Heading />
+    //     </div>,
+    //     document.getElementById("root")
+    // );
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // import Heading from "./Heading";
+    // import List from "./List";
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    // ReactDom.render(
+    //     <div>
+    //         {/* <h1>Hello world!</h1> */}
+    //         <Heading />
+    //         <List />    
+    //      </div>,
+    //     document.getElementById("root")
+    // );
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+    // import React from "react";
+    // import  ReactDom from "react-dom";
+    // import App from "./components/App";
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    // ReactDom.render(<App />,document.getElementById("root"));
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+    // import React from "react";
+    // import  ReactDOM  from "react-dom/client";
+    // import Custom from "./components/Custom";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    // const root = ReactDOM.createRoot(document.getElementById('root'));
 
-### Analyzing the Bundle Size
+    // const on = {
+    //     name: "Hemant",
+    //     age: 20
+    // }
+    // root.render(
+    //     <>
+    //         <Custom name={on} />
+    //     </>
+    // );
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    // This is React@18 syntax to render 
+    // in react@18 ReactDom.render() is not supported
+    // and import ReactDom from react-dom is also not supported it needs `react-dom/client`
 
-### Deployment
+    // import React from "react";
+    // import  ReactDom from "react-dom/client";
+    // import App from "./components/App";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    // const root = ReactDom.createRoot(document.getElementById('root'));
+   
+    // root.render(<div>
+    //     <App />
+    // </div>);
